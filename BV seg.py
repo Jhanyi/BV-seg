@@ -375,3 +375,7 @@ predStackPart = predStack[5:]
 empty = np.zeros(image.shape)
 predStackUse = np.concatenate(((empty,)*5,predStackPart), axis=0)
 tifffile.imsave('WT_6mo_BVpredseg_use.tiff', predStackUse)
+
+
+
+# major credits to: https://github.com/bnsreenu/python_for_microscopists/blob/76ff821bed35f931dd01f7a4204d71cb1ce16bbd/216_mito_unet__xferlearn_12_training_images.py
