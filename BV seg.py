@@ -1,3 +1,7 @@
+"""
+Implementation of U-Net with RESNET50 architecture for segmentation of blood vessels in mouse cortex acquire with SEM
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 from patchify import patchify, unpatchify
@@ -222,7 +226,7 @@ history = BVmodel.fit(my_generator,
 
 BVmodel.save('BV_model6_20epochs.hdf5')
 
-########################################### from load model ##########################################
+########################################### OR from load model ##########################################
 # TODO: train from loaded hdf5 model, get_config
 
 BVmodel = tf.keras.models.load_model('BV_model6_20epochs', compile=True)
